@@ -28,9 +28,9 @@ public:
 			(*it)->MostFr();
 			std::cout << "\nFruct " << index + 1 << '/' << rukz.size() << std::endl << std::endl;
 
-			std::cout << "Left - '<-'\n";
-			std::cout << "Right - '->'\n";
-			std::cout << "Enter - 'take off'\n";
+			std::cout << "1 - '<-'\n";
+			std::cout << "2 - '->'\n";
+			std::cout << "3 - 'take off'\n";
 
 			char input = _getch();
 
@@ -63,6 +63,17 @@ public:
 
 		if (deleted != rukz.end())
 			rukz.erase(deleted);
+	}
+	void Remuovere() {
+		int a = 0;
+		for (auto& it : rukz) {
+			++a; std::cout << a << ' ';
+			it->MostFr();
+		}
+		std::cout << "Введите номер фрукта для удаления : ";
+		int b; std::cin >> b;
+		rukz.erase(rukz.begin() + b - 1);
+		std::cout << "Фрукт удалён.";
 	}
 
 
