@@ -141,6 +141,7 @@
     <ClInclude Include="Ciliegia.h" />
     <ClInclude Include="Ciliegio.h" />
     <ClInclude Include="Frutti.h" />
+    <ClInclude Include="IgraIgrok.h" />
     <ClInclude Include="Location.h" />
     <ClInclude Include="Rukzak.h" />
     <ClInclude Include="Melo.h" />

@@ -7,6 +7,7 @@
 #include"Pomo.h"
 #include"Rukzak.h"
 #include"Location.h"
+#include"IgraIgrok.h"
 
 //class Base {
 //private:
@@ -163,5 +164,16 @@ int main() {
 	LOC.ADDDPiante(*cili333);
 	LOC.MO();
 	LOC.CuciaPiante();
+
+	Igra IGRA;
+	Igrok IGROK;
+	std::vector<Inter*>NTER;
+	NTER.push_back(&IGRA);
+	NTER.push_back(&IGROK);
+	for (auto& it : NTER) {
+		it->Function(LOC); it->Function(rukzak);
+	}
+
+
 	return 0;
 }

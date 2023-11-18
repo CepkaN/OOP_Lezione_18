@@ -4,6 +4,8 @@
 #include<memory>
 #include<conio.h>
 #include<Windows.h>
+#include<memory>
+#include"Frutti.h"
 //123456
 class Rukzak 
 {
@@ -14,6 +16,8 @@ public:
 	{
 		rukz.push_back(fruct);
 	}
+	
+
 
 	void ShowRuk()
 	{

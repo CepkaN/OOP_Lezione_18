@@ -42,4 +42,15 @@ public:
 			g->MostraPian();
 	}
 	}
+	void Remuovere() {
+		int a = 0;
+		for (auto& it : PIANI) {
+			++a; std::cout << a << ' ';
+			it->MostraPian();
+		}
+		std::cout << "Введите номер дерева для удаления : ";
+		int b; std::cin >> b;
+		PIANI.erase(PIANI.begin() + b - 1);
+		std::cout << "Дерево удалено.";
+	}
 };
